@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<omp.h>
-
+// Estoy comentando este archivo
 int main () {
   int a, i;
+  int new;
   
 #pragma omp parallel shared(a)
 {
