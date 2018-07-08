@@ -2,6 +2,11 @@
  * Solucion modelo del ejercicio 3 del examen parcial
  * de Algoritmos Paralelos (2015-I)
  ************************************************************************/
+/*
+No tengo ni idea de como esto llegó aqui xd
+*/
+
+
 
 #include        <stdio.h>
 #include        "mpi.h"
@@ -19,10 +24,10 @@ int main (int argc, char *argv[])
   MPI_Request request;
   
   ierror = MPI_Init(&argc, &argv);
-  
+  /*agg*/
   ierror = MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
   ierror = MPI_Comm_size(MPI_COMM_WORLD, &size);
-  
+  /*no entiendo este código, por ahora equisdedededede*/
   right = my_rank + 1;
   if (right == size) right = 0;
   

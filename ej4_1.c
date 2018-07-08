@@ -4,7 +4,7 @@
 int main () {
   int a, i;
   int new;
-  
+int f,g,h,p;  
 #pragma omp parallel shared(a)
 {
 #pragma omp master      
@@ -22,5 +22,7 @@ int main () {
 printf("La suma es %d \n",a);
  }
 }
+
+/*estoy modificando este archivo equisde*/
 
 
