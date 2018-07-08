@@ -5,11 +5,11 @@ int main (void){
 	
 	int i;
 	int a[100];
-	
+// ser verde no es nada facil	
 	for (i=0;i<100;i++){
 		a[i]=i*5;
 	}
-	
+// ignorar esto xd	
 	#pragma omp parallel private(i) shared(a)
 	{
 		#pragma omp for ordered
@@ -22,3 +22,4 @@ int main (void){
 	}
 	printf("\n");
 }
+// Modificando el archivo plancha
